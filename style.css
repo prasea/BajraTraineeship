@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-body{
-  font-family: 'Lato', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: "Lato", sans-serif;
   background: #f4f4f4;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+.container {
   max-width: 1100px;
   margin-inline: auto;
   overflow: hidden;
 }
-.header{
+.header {
   padding: 1rem;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-list{
+.nav-list {
   list-style: none;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-.nav-list .nav-item{
+.nav-list .nav-item {
   padding: 1rem;
 }
-.nav-list .nav-item .nav-link{
+.nav-list .nav-item .nav-link {
   text-decoration: none;
   padding: 1rem;
 }
-.nav-list .nav-item .nav-link:hover{
-  background-color: #93cb52;  
+.nav-list .nav-item .nav-link:hover {
+  background-color: #93cb52;
   border-radius: 0.5rem;
 }
-.bajra-logo{
+.bajra-logo {
   width: 50px;
   height: 50px;
   background-color: #941e2d;
@@ -47,24 +47,22 @@ body{
   justify-content: center;
   align-items: center;
 }
-.bajra-logo img{
+.bajra-logo img {
   display: block;
   width: 100%;
   height: auto;
 }
-.main-heading{
+.main-heading {
   font-size: 1.3rem;
   display: flex;
-  gap: 20px ;
+  gap: 20px;
   align-items: center;
 }
-.cards{
+.cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(1, 1fr);
 }
-.card{
-  min-height: 200px;
+.card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 3px 3px 8px gray;
@@ -72,36 +70,62 @@ body{
   padding-bottom: 0;
   margin-top: 4rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.card-content{
-  text-align: center;
-  margin: 1rem 0;
-}
-.card-description p{
-  margin: 1rem 0;
-}
-.buttons{
-  display: flex;
-  justify-content : space-between
-}
-.tags{
-  display: flex;  
-}
-.tag{
-  margin: 0 0.5rem;
+  gap: 1rem;
+  max-height: 350px;
 }
 
-.card-img{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 200px; 
-  border-radius: 0.25rem; /* Optional: Add rounded corners */
+.card-img {
+  flex: 1;
+  background-color: #333;
+  max-height: 300px;
 }
-.card-img img{
+.card-content {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-img img {
+  display: block;
   width: 100%;
-  min-height: 200px;
-  object-fit: cover;   
+  height: 100%;
+}
+.card-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.card-header {
+  margin-bottom: 1rem;
+}
+.card-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  background-color: #551a8b;
+  color: #fff;
+  border-radius: 0.6rem;
+}
+.tags {
+  display: flex;
+}
+.tag {
+  margin: 0 1rem;
+  background-color: #a66bbe;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.55rem;
+}
+
+.page-footer {
+  padding: 1rem;
+  text-align: center;
 }
